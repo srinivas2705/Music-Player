@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+
+#musicBox {
+  margin: auto;
+  width: 68rem;
+  height: 35rem;
+  background-color: rgb(243, 180, 133);
+  border-radius: 3rem;
+}
+
+section {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  background-color: white;
+  border-radius: 3rem;
+}
+
+aside {
+  width: 10rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-right: 0.7px solid rgb(200, 198, 195);
+}
+
+aside img {
+  width: 3rem;
+  height: auto;
+  border-radius: 0.5rem;
+  align-self: flex-start;
+  visibility: hidden;
+}
+
+aside ul {
+  list-style: none;
+  font-size: 0.7rem;
+  color: gray;
+  width: 100%;
+  padding-right: 0.3rem;
+}
+
+aside ul li {
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0 0.2rem 2.5rem;
+}
+
+aside ul h3 {
+  margin: 0.2rem 0;
+}
+
+aside ion-icon {
+  font-size: 1.5rem;
+  margin-left: -1.5rem;
+}
+
+aside li:hover {
+  background-color: rgb(243, 180, 133);
+  border-radius: 0 1rem 1rem 0;
+  color: white;
+}
+
+#musicBox>section main {
+  width: 60%;
+  height: 100%;
+  /* border: 1px solid red; */
+  padding: 2rem;
+}
+
+section main p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+section main ion-icon {
+  color: lightcoral;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+section main input {
+  border: none;
+  outline: none;
+  width: 60%;
+}
+
+#musicBox section main section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: scroll;
+  gap: 1rem;
+}
+
+main article {
+  width: 7rem;
+  height: 10rem;
+  font-size: 0.8rem;
+}
+
+main article img {
+  border-radius: 0.5rem;
+}
+
+#trend {
+  all: unset;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.7rem;
+}
+
+#trend article {
+  all: unset;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#trend img {
+  all: unset;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+#trend li {
+  list-style: none;
+}
+
+#trend li:hover {
+  all: unset;
+}
+
+#trend span {
+  display: block;
+}
+
+#player {
+  all: unset;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+}
+
+#player p {
+  width: 25rem;
+  height: 2px;
+  background-color: white;
+  position: relative;
+}
+
+#bubble {
+  all: unset;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  margin-left: 10rem;
+  animation: pro 10s infinite;
+  animation-duration: 10s;
+  animation-play-state: paused;
+}
+
+@keyframes pro {
+  from {
+    transform: translateX(2rem);
+  }
+
+  to {
+    transform: translateX(25rem)
+  }
+}
+
+#player section {
+  all: unset;
+
+}
+
+#play {
+  display: none;
+}
+
+#player img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+#player ion-icon {
+  font-size: 1.5rem;
+}
+
+#player li {
+  list-style: none;
+}
+
+audio {
+  visibility: hidden;
+}
+
+#player section span {}
